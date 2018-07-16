@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+    <h1>
+        {{pageTitle}}
+    </h1> 
+    <div class="countdownContainer">
+        <sb14-countdown countDownFromMinutesSeconds="0:10" message="Next game starts in:" (countDownReady)="NextGame()"></sb14-countdown>
+    </div>
+    <div class="joinAsContainer">
+       <div class="label">Join in as:</div>
+       <div class="inputContainer"><input type="text"/></div>
+    </div>
+    <div class="fromContainer">
+        <div class="label">From:</div>
+        <select></select>
+        <img class="flag"/>
+    </div>
+    <div class="whatIsContainer">
+        <h2>What is SB0014</h2>
+        <div class="label">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+    <div class="lastGameRankingsContainer">
+        <div class="label">Last Game Rankings</div>
+        <sb14-highscores></sb14-highscores>
+    </div>
+</div>
